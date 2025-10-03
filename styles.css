@@ -290,6 +290,20 @@ p {
     box-shadow: var(--shadow-heavy);
 }
 
+.hero-profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--shadow-heavy);
+    border: 5px solid white;
+    transition: transform 0.3s ease;
+}
+
+.hero-profile-img:hover {
+    transform: scale(1.05);
+}
+
 .hero-scroll {
     position: absolute;
     bottom: 2rem;
@@ -431,6 +445,21 @@ section {
     color: white;
     font-size: 120px;
     box-shadow: var(--shadow-heavy);
+}
+
+.about-profile-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: var(--shadow-heavy);
+    border: 3px solid white;
+    transition: transform 0.3s ease;
+}
+
+.about-profile-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 /* Skills Section */
@@ -1019,10 +1048,20 @@ section {
         font-size: 120px;
     }
 
+    .hero-profile-img {
+        width: 250px;
+        height: 250px;
+    }
+
     .about-img-placeholder {
         width: 280px;
         height: 280px;
         font-size: 100px;
+    }
+
+    .about-profile-img {
+        width: 280px;
+        height: 280px;
     }
 
     .contact-form {
